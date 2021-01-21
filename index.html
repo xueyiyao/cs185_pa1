@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="tabs">
+      <div class="tab">
+        <label class="tab-label" for="tab-1">Text</label>
+      </div>
+      <div class="tab">
+        <label class="tab-label" for="tab-2">Image</label>
+      </div>
+      <div class="tab">
+        <label class="tab-label" for="tab-3">Video</label>
+      </div>
+      <div class="tab">
+        <label class="tab-label" for="tab-4">Table</label>
+      </div>
+    </div>
+    <input type="radio" id="tab-1" name="tab-label" checked />
+    <input type="radio" id="tab-2" name="tab-label" />
+    <input type="radio" id="tab-3" name="tab-label" />
+    <input type="radio" id="tab-4" name="tab-label" />
+    <div class="content text">
+      <div class="form name-form">
+        <label>First Name:</label><br />
+        <input type="text" /><br />
+        <label>Last Name:</label><br />
+        <input type="text" /><br />
+      </div>
+      <div class="form movie-form">
+        <label>Favorite Movie:</label><br />
+        <input type="radio" id="avengers" name="fav-movie" checked />
+        <label for="avengers">Avengers</label><br />
+        <input type="radio" id="tdk" name="fav-movie" />
+        <label for="tdk">The Dark Knight</label><br />
+        <input type="radio" id="tenet" name="fav-movie" />
+        <label for="tenet">Tenet</label><br />
+      </div>
+      <button>Done</button>
+    </div>
+    <div class="content image">
+      <div class="row">
+        <div class="col">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/1e/San_Francisco_from_the_Marin_Headlands_in_March_2019.jpg"
+            alt="San Francisco"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Montaje_de_la_Ciudad_de_Buenos_Aires.png"
+            alt="Buenos Aires"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://photos.mandarinoriental.com/is/image/MandarinOriental/paris-2017-home?wid=2880&hei=1280&fmt=jpeg&crop=9,336,2699,1200&anchor=1358,936&qlt=75,0&fit=wrap&op_sharpen=0&resMode=sharp2&op_usm=0,0,0,0&iccEmbed=0&printRes=72"
+            alt="Paris"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img
+            src="https://cdn.britannica.com/46/189746-050-C790AE3F/Skyline-Cairo.jpg"
+            alt="Cairo"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Hong_Kong_Harbour_Night_2019-06-11.jpg/2880px-Hong_Kong_Harbour_Night_2019-06-11.jpg"
+            alt="Hong Kong"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/2880px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg"
+            alt="Sydney"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="content video">
+      <div class="row">
+        <div class="col">
+          <iframe
+            width="450"
+            height="255"
+            src="https://www.youtube.com/embed/S77A_7w7LYk"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col">
+          <iframe
+            width="450"
+            height="255"
+            src="https://www.youtube.com/embed/KMc3vL_MIeo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col">
+          <iframe
+            width="450"
+            height="255"
+            src="https://www.youtube.com/embed/8qRZcXIODNU"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="content table">
+      <h2>Projects</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Details</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://github.com/rhiannaso/SpoilAlert">SpoilAlert</a>
+          </td>
+          <td>
+            Android App that keeps track of grocery items and alerts users when
+            they are about to expire
+          </td>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://github.com/ReciPull/recipull.github.io"
+              >Recipull</a
+            >
+          </td>
+          <td>
+            Web application that takes list of ingredients and finds recipes
+            that contains those ingredients
+          </td>
+          <td>2018</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+.tabs {
+  padding: 5px;
+  background-color: rgb(71, 71, 71);
+  color: whitesmoke;
+}
+
+.tabs > .tab {
+  display: inline-block;
+  margin: 10px;
+}
+
+.tab-label {
+  font-size: x-large;
+  cursor: pointer;
+}
+
+input[name="tab-label"] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.content {
+  display: none;
+}
+
+#tab-1:checked ~ .text {
+  display: block;
+}
+
+#tab-2:checked ~ .image {
+  display: block;
+}
+
+#tab-3:checked ~ .video {
+  display: block;
+}
+
+#tab-4:checked ~ .table {
+  display: block;
+}
+
+.text {
+  padding: 10px;
+}
+
+.movie-form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 10px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col > img {
+  max-width: 450px;
+  max-height: 450px;
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
